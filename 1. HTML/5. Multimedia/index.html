@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia Tags</h1>
+    <!-- 
+        1. Images
+        2. Audio
+        3. Video
+    -->
+<h2>Image tags</h2>
+<!-- 
+    <img src="image-path" alt="alternate text" width="100px" height="100px">    = self closing tag
+
+    Paths:
+      1. Absolute path
+      2. Relative paths
+      3. External paths
+-->
+    <!-- <h3>Image with abosolute path</h3>
+    <img src="A:\urbnSchool\1. HTML\5. Multimedia\Assets\images\picture.jpg" alt="sample image">
+
+    <h3>Images with relative path</h3>
+    <img src="./Assets/images/picture.jpg" alt="image of color paletts" width="200px" height="200px">
+
+    <h3>Image with External path / url</h3>
+    <img src="https://th-i.thgim.com/public/incoming/szh2jw/article52289148.ece/alternates/FREE_1200/The-Hindu.jpg" alt="hindu site image" width="200px"> 
+    
+    Image extensions
+    .jpg or .jpeg   -------- images with complex colors
+    .png            -------- images with little colors and sharp text
+    .tif or .tiff   -------- images with highest quality
+    -->
+
+
+
+    <hr>
+
+    <h2>Audio tags</h2>
+    <!-- 
+        <audio>
+            <source src="audio-path" type="audio/mp3">
+        </audio>    
+    
+    -->
+    <audio controls>
+        <sources src="./Assets/Audio/audio.mp3" type="audio/mp3">
+        <sources src="./Assets/Audio/audio.mp3" type="audio/ogg">
+        <sources src="./Assets/Audio/audio.mp3" type="audio/raw">
+    </audio>
+
+
+    <hr>
+
+    <h2>Video Tags</h2>
+    <!-- 
+        <vidoe controls>
+            <source src="video-path" type="video/mp4">
+        </video>    
+    
+    -->
+
+    <video controls>
+        <source src="./Assets/videos/video.mp4" type="video/mp4">
+        <source src="./Assets/videos/video.mp4" type="video/mov">
+        <source src="./Assets/videos/video.mp4" type="video/some-other-formate">
+
+    </video>
+</body>
+</html>
