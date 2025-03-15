@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <!-- 
+        Forms
+            1. Single line input - name, email, password, phonenumber <input> - self closing tag
+            2. Multi-line input - address - <textarea>.....</textarea>
+            3. Single response from multiple option : <input type="radio">, <select>......</select>
+            4. Muliple response from multiple options - <input type="checkbox">, <select>.....</select>
+            5. file upload   - <input type="file">
+            6. label - labeling the input
+            
+    <form action="#" method="GET/POST">
+        // form field
+        1. Firstname   type : text
+        2. lastname    type : text
+        3. password    type: password
+        4. confirm password
+        5. email       type: email
+        6. phonenumber  type: number
+        7. dob         type: date
+        8. gender
+        9. course - selection
+        10. address     type: tag (textarea)
+        11. file upload
+       
+        {
+            name: value----
+            firstName: siva
+            gender: female
+            subjects: Science
+        }
+    <form>
+    
+    -->
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="firstName">Enter the First name : </label>
+                </td>
+                <td>
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter your firstname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastName">Enter your Last Name</label>
+    
+                </td>
+                <td>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Enter your passsword</label>
+                </td>
+                <td><input type="password" id="passsword" name="passsword" placeholder="Type your password"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Enter your email</label></td>
+                <td><input type="email" name="email" id="email" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="mobileNumber">Enter your number</label></td>
+                <td><input type="number" name="mobileNumber" id="mobileNumber" placeholder="Enter your number"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Enter DOB</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Enter address</label></td>
+                <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><label for="gender">Gender :</label></td>
+                <td>
+                    <input type="radio" name="gender" id="gender-male"> <span>Male</span>
+                    
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="gender-female"> <span>Female</span>
+                  
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="gender-others"><span>Others</span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="subjects"> Select Subjects</label></td>
+                <td><select name="subjects" id="subjects">
+                        <option value="English">English</option>
+                        <option value="Science">Science</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Tamil">Tamil</option>
+
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="multi-subjects"> Select Subjects</label></td>
+                <td><select name="multi-subjects" id="multi-subjects" multiple>
+                        <option value="English">English</option>
+                        <option value="Science">Science</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Tamil">Tamil</option>
+
+                </select></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="terms" id="terms">
+                   </td>
+               <td> <label for="terms">Accept the Terms and conditions</label></td>
+               
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="file">Upload your certificates</label>
+                    
+                </td>
+                <td>
+                    <input type="file" name="file" id="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Register"></td>
+                <td><input type="reset" value="Clear"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
