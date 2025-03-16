@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector - Combinator</title>
+    <style>
+        /* 
+            Descendant Selector
+            1. Combinator selectos
+            Syntax
+
+            referecedSelector(grand-parent) selector {
+                property: value;
+            }
+        
+        
+        */
+
+        #about p{
+            color: red;
+        }
+
+        #projects ul{
+            color: blue;
+        }
+
+        #about small{
+            color: green
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="about">
+        <h2>About section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quod.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, odit. <small>hello small selectors</small></p>
+        <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>mango</li>
+            <li>Banana</li> <small>again small</small>
+        </ul>
+    </div>
+    <div id="projects">
+        <h2>Projects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quos?</p>
+        <ul>
+            <li>To-Do app</li>
+            <li>Task Manager app</li>
+            <li>Notes taking</li>
+            <li>Blog website</li>
+        </ul>
+    </div>
+</body>
+</html>

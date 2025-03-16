@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <style>
+        /* 
+            General Adjacent Sibling selector
+            1. Combinator selector
+            Syntax
+            referenceSelector(first-sibling)~selector(immediate-sibling){
+                property: value;
+            }
+        
+        */
+
+        #about h2~p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="about">
+        <h2>About section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quod.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, odit. <small>hello small selectors</small></p>
+        <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>mango</li>
+            <li>Banana</li> <small>again small</small>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, in.</p>
+        <h3>hello</h3>
+       <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, et.</p>
+       </div>
+    </div> 
+</body>
+</html>

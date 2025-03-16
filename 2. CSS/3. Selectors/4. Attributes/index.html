@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes selectors</title>
+    <style>
+        /* 
+            Attributes
+            [attributename]{
+                property: value;
+            }
+            selector[attributes]{
+                property: value;
+            }
+        
+        */
+        p[class="odd"]{
+            color: red;
+        }
+        input[type="text"]{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p class="odd">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="odd">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="odd">Lorem, ipsum dolor.</p>
+
+    <form action="#">
+        <label for="name">name</label>
+        <input type="text" id="name" name="name">
+        <p></p>
+        <label for="address">address</label>
+        <input type="text" id="name" name="name">
+        <p></p>
+        <label for="email">email</label>
+        <input type="email" id="email" name="email">
+
+    </form>
+</body>
+</html>
