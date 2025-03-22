@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - colors</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+
+        /* Color based on names */
+        .name{
+            background-color: bisque;
+        }
+
+        /* Color based on hex value */
+        .hex{
+            background-color: #eb7f58;
+        }
+
+        /* Color based on rgb value */
+        .rgb{
+            background-color: rgb(0, 0, 255)
+        }
+
+        /* Color based on rgba value */
+        .rgba{
+            background-color: rgba(0, 0, 255, 0.436);
+        }
+
+        /* linear-gradient 
+            linear-gradient(angle(deg) or keyword( to right, to bottom), color, color2....colon)
+        
+        */
+        .linear-gradient{
+                background: linear-gradient(90deg, rgb(201, 82, 82), rgb(137, 137, 231), rgb(91, 224, 91));
+        }
+
+        /* radial-gradient
+        
+            radial-gradient(shape(circle, eclipe), color1.....colorn)
+        */
+        .radial-gradient{
+            background: radial-gradient(circle, yellow, green);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Css - Colors</h1>
+    <!-- 
+        1. name
+        2. hex
+        3. rgb
+        4. rgba
+        5. linear-gradient
+        6. radial-gradient
+    -->
+
+<div class="name"></div>
+<div class="hex"></div>
+<div class="rgb"></div>
+<div class="rgba"></div>
+<div class="linear-gradient"></div>
+<div class="radial-gradient"></div>
+</body>
+</html>
