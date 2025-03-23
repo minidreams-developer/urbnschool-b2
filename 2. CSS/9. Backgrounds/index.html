@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Background properties</title>
+    <style>
+        /* 
+            1. Background image
+                    background: url("image-url or path")
+            2. Background repeat
+                    background-repeat: 1. repeat
+                                       2. repeat-x
+                                       3. repeat-y
+                                       4. no-repeat
+            3. Background-position
+                    background-position: left or right or top or bottom
+            
+            4. Background-size
+                    background-size: auto or cover, contain
+
+            5. Background Attachment
+                    background-attachment: scroll or fixed
+        
+        */
+        .image-one{
+            /* background: url("https://cdn.pixabay.com/photo/2024/05/27/07/46/bee-8790316_640.jpg"); */
+            height: 1000px;
+            /* width: 1000px; */
+            /* background-repeat:no-repeat; */
+            /* background-color: green; */
+            /* background-position: center; */
+            /* background-size: cover; */
+            /* background-attachment: scroll; */
+
+            background:green url("https://cdn.pixabay.com/photo/2024/05/27/07/46/bee-8790316_640.jpg") no-repeat fixed center/cover ;
+        }
+/* 
+
+        background: [background-color] [background-image] [background-repeat] [background-attachment] [background-position]/[background-size]
+
+*/
+
+    </style>
+</head>
+<body>
+    <!-- 
+        CSS BACKGROUNDS
+        1. background-image
+        2. background-repeat
+        3. background-position
+        4. background-size
+        5. background-attachment
+    -->
+        <h1>CSS - Background</h1>
+        <div class="image-one"></div>
+        <div class="image-two"></div>
+        
+</body>
+</html>
