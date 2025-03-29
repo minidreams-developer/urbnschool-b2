@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - 2D ANIMATION</title>
+    <style>
+        .transform{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+        }
+        .transform:hover{
+            transform: translateY(200px);
+            transform: translateX(100px);
+            /* transform: translate(00px); */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Transform: 2d animation
+        1. Translate
+        2. Scale
+        3. Rotate
+        4. Skew
+    -->
+        <!-- 
+        1. Translate => move things in horizontally & vertical line
+        syntax:
+            transform: translate(x, y) shorthand property
+            transform: translateX()
+            transform: translateY()
+                    X => horizontal distance ( px, %, em, rem) also can enter positive or negative value
+                    Y => vertical distance ( px, %, em, rem ) also can enter positive or negative value
+    
+        -->
+    <h1>CSS - ANIMATION</h1>
+
+    <div class="transform">
+        <h1>Translate</h1>
+    </div>
+</body>
+</html>
