@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - MEDIA QUERY</title>
+    <style>
+        /* Mobile devices */
+        @media screen and (max-width: 599px){
+            body{
+                background-color: red;
+            }
+        }
+
+
+        /* tabled Devices */
+        @media screen and (min-width: 600px) and (max-width: 900px){
+            body{
+                background-color: bisque;
+            }
+        }
+
+        
+        @media screen and (min-width: 900px){
+            body{
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Breaking Points
+        i) extra small screens => 600px and below
+        ii) small screens => 600px - 768px
+        iii) medium device => 768 - 992px
+        iv) large devices => 992px = 1200px
+        v) extra large devices => 1200px - max    
+    
+    -->
+        <!-- 
+            Syntax
+
+            @media 'media-type' and (media-feature){
+
+                DEFAULT STYLING
+            
+            }
+
+            media-type: screen, print, all
+            media-feature: max and min width
+                           max and min height
+    
+        -->
+    <h1>CSS - Media Query</h1>
+
+</body>
+</html>
