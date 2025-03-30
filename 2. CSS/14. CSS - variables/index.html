@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Variable</title>
+    <style>
+        :root{
+            --primary: rgb(203, 44, 44);
+            --pad: 20px;
+        }
+
+        h1{
+            color: var(--primary);
+            border: 2px solid black;
+            padding: var(--pad);
+        }
+        h2{
+            color: var(--primary);
+        }
+        p{
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. we select properties
+        2. Create it as variables
+        3. use that wherever we want
+
+        Syntax
+        :root{
+            key: value
+            --color: #jj5648
+            --margin: 20px        
+        }
+
+        h1{
+            color: var(--color)
+        }
+        p{
+            color: var(--color)
+        }
+    -->
+    <h1>Heading</h1>
+    <h2>Sub-Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum molestias praesentium cumque autem doloremque consequatur optio tenetur suscipit facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum molestias praesentium cumque autem doloremque consequatur optio tenetur suscipit facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum molestias praesentium cumque autem doloremque consequatur optio tenetur suscipit facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum molestias praesentium cumque autem doloremque consequatur optio tenetur suscipit facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum molestias praesentium cumque autem doloremque consequatur optio tenetur suscipit facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum molestias praesentium cumque autem doloremque consequatur optio tenetur suscipit facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum molestias praesentium cumque autem doloremque consequatur optio tenetur suscipit facilis.</p>
+</body>
+</html>
