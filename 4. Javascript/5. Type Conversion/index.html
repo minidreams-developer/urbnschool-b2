@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Conversion</title>
+  </head>
+
+  <body>
+    <script>
+      // Type conversion
+      /*
+        1. String conversion ( convert it as string)
+        2. Number conversion ( convert it as Number )
+        3. Boolean conversion ( convert it as Boolean [true/false])
+    
+        I) Implicit conversion
+        II) Explicit conversion
+    
+    */
+
+      // 1. String Conversion
+      let isAdmin = true; // boolean
+      let num = 4585; // Number
+      console.log("before conversion==>", typeof isAdmin);
+      console.log("before conversion==>", isAdmin);
+      // Syntax
+      // String(variable name)
+      isAdmin = String(isAdmin);
+      console.log("After conversion==>", typeof isAdmin);
+      console.log("After conversion==>", isAdmin);
+
+      console.log("=============================================");
+      console.log("before conversion==>", typeof num);
+      console.log("before conversion==>", num);
+      num = String(num);
+      console.log("After conversion==>", typeof num);
+      console.log("After conversion==>", num);
+
+      console.log("=============================================");
+
+      // 2. Number conversion
+      let age = "45";
+      console.log("Age=>", age);
+      console.log("Age=>", typeof age);
+
+      age = Number(age);
+      console.log("After conversion==>", typeof age);
+      console.log("After conversion==>", age);
+
+      // rules
+      /*
+        undefined => NaN
+        null => 0
+        true/false => 1/0
+        string => NaN
+        Numerical String => Number
+      */
+
+      console.log("=============================================");
+      // 3. Boolean conversion
+      let myAge = 22;
+      console.log("before conversion==>", typeof myAge);
+      console.log("before conversion==>", myAge);
+      myAge = Boolean(myAge);
+      console.log("After conversion==>", typeof myAge);
+      console.log("After conversion==>", myAge);
+
+      // rules
+      /*
+        false => 0, "", null, undefined, NaN
+        true => everything else is true
+      */
+
+      let price = 0;
+      price = Boolean(price);
+      console.log("price=>", typeof price);
+      console.log("price=>", price);
+    </script>
+  </body>
+</html>
