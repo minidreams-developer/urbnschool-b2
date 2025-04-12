@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparison Operators</title>
+  </head>
+  <body>
+    <script>
+      // Comparison Operators
+      /*
+        1. Less than =>                        <
+        2. Greater than =>                     >
+        3. equals to =>                        ==
+        4. Greater than equals to =>           >=
+        5. Less than equals to =>              <=
+        6. not equals to =>                    !=
+        7. Strict equals to =>                 ===
+    
+     It compares two values and output Boolean[true/false]
+     Implicit type conversion happens
+     eg:
+        value1 {comparison operator} value2 => result[convert as boolean]
+    */
+
+      // 1. Less than <
+      let num1 = 60;
+      let num2 = 50;
+
+      console.log("10 < 20==>", num1 < num2);
+
+      // 2. Greater than
+      console.log("10 > 20==>", 10 > 20);
+
+      // 3. less than equals to
+      console.log("10 <= 10==>", num1 <= num2);
+
+      // 4. Greater than equals to
+      console.log("60 >= 50===>", num1 >= num2);
+
+      // 5. equals to
+      // will compare for same value for both sides
+      console.log("comparing 5", 5 == "5");
+      // if we compare different data types, the value will be converted into number data types
+      console.log("comparing two data types", 10 == "45");
+
+      // 6. not equals to
+      console.log("not equals to==>", 10 != 20);
+
+      // 7. Strict equals to
+      // this will compare the value along with data types
+      console.log("Strict equals to==>", 5 === "5");
+    </script>
+  </body>
+</html>
