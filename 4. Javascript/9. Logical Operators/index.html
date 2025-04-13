@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operator</title>
+  </head>
+  <body>
+    <script>
+      // Logical Operators
+      /*
+            1. OR           ||
+            2. AND          &&
+            3. NOT          !
+            4. Nullish coalescing       ??
+        
+        */
+      /*
+        a + b => a, b are operands, + => operators(Binary operator)
+        OR   ||
+        it access two operands
+        a || b || c || d || e
+            if a is true it returns value of a or true
+            if a is false / b is true, then it returns value of b/ true or false
+       
+        true  || true   => true
+        true || false   => true
+        false || true   => true
+        false || false      => false
+       */
+
+      /*
+       a = 10;
+       b = 30;
+            if(a > b || b > a || a === b){
+            ----------------------------------------
+           i)       a > b (false) || b > a (true)  
+           ii)      false || true => true
+           iii)     true || a === b (false)
+           iv)      true || false       => true
+            block gets executed
+            
+            }
+       */
+
+      // null, "", 0, undefined, NaN, null
+      if (1 + 2 || 0 + 0) {
+        // 3 || 0
+        // true || false => true
+        console.log("will it execute?");
+      }
+
+      // OR operator check for first truthy value
+      console.log("OR==>", 0 || 1 || null);
+
+      // what happen if all the values are true?(output the first truthy value)
+      console.log("OR TRUE===>", 1 || 2 || 3 || 4);
+
+      // what happen if all the values are false(output the last value)
+      console.log("OR FALSE===>", 0 || 2 - 2 || 3 - 3 || null);
+
+      console.log("==============================================");
+      // AND operator checks for first false value
+      // a && b
+      // return a if it is false
+      // it will return b
+
+      // true && true       => true
+      // true && false      => false
+      // false && true      => false
+      // false && false     => false
+
+      let a = 10;
+      let b = 12;
+
+      if (a < b && b > a) {
+        // true && true  => true
+        console.log("will it execute??");
+      }
+
+      // it finds the first falsy value
+      console.log("AND==>", 0 && 1 && null);
+
+      // what happen if all are false values
+      console.log("AND FALSE===>", 0 && 2 - 2 && 3 - 3 && null);
+
+      // what happen if all are true (outputs the last value)
+      console.log("AND TRUE===>", 1 && 2 && 3 && 4);
+
+      console.log("=================================================");
+
+      // NOT operator !
+      // it will convert the true to false and vise versa
+
+      let isAdmin = true;
+      isAdmin = !isAdmin;
+      console.log("isAdmin==>", !isAdmin);
+
+      if (!(a > b)) {
+        // 10 > 12 ==> false
+        // !false ===> true
+        console.log("will this executed???????");
+      }
+
+      console.log("===================================================");
+      // Nullish coalcasing operator
+      // ??
+      // used to check whether the variable is defined or not
+      // a ?? b  => if a defined outputs a, if not then outputs b.
+
+      let c = null;
+      console.log("Nullish coalcashing", c ?? null ?? b);
+
+      // find out!!!
+      console.log("false ?? true==>", false ?? true);
+    </script>
+  </body>
+</html>
