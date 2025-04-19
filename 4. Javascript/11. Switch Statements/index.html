@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Switch Statement</h1>
+    <script>
+      // Alternative to multiple if conditions
+      // Syntax
+      /*
+            switch(x){
+                case-value-1:
+                    statement
+                    break;
+                case-value-2:
+                    statement
+                    break;
+                default:
+                    statement
+            }
+        
+        */
+      let day = prompt("Enter any day (Sunday to Saturday)");
+      // day = friday
+      // day lowercased: friday
+
+      switch (day.toLowerCase()) {
+        case "sunday":
+          console.log("User entered", day);
+          break;
+        case "monday":
+          console.log("User entererd", day);
+          break;
+        case "tuesday":
+          console.log("User entererd", day);
+          break;
+        case "wednesday":
+          console.log("User entererd", day.toLocaleLowerCase());
+          break;
+        case "thursday":
+          console.log("User entererd", day);
+          break;
+        case "friday":
+          console.log("User entererd", day);
+          break;
+        case "saturday":
+          console.log("User entererd", day);
+          break;
+        default:
+          console.log("Enter only the day between Sunday and saturday");
+      }
+    </script>
+  </body>
+</html>
