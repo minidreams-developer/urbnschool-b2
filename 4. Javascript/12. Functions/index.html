@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+
+    <script>
+      const ORANGE = "some oranges";
+      const DOB = "25-02-1998";
+      // building blocks of programming
+
+      // { function } donar program checking
+      // input => process => output
+      // 1. Function declaration
+      // 2. Function calling
+
+      /*
+        function declaration
+
+        function functionName (parameter-1, parameter-2,....parameter-n){
+          function body
+        }
+      
+
+        function calling
+        functionName(argument-1, argument-2,....argument-n)
+      */
+
+      // function addFunction() {
+      //   let numOne = 12;
+      //   let numTwo = 20;
+      //   let sum = numOne + numTwo;
+      //   console.log("sum=>", sum);
+      // }
+
+      // addFunction();
+
+      // function add(numOne, numTwo) {
+      //   let sum = numOne + numTwo;
+      //   console.log("sum====>", sum);
+      // }
+
+      // add(10, 1000);
+
+      // ------------------------------------------------------------------
+      // Scopes
+      // global variable, local variable
+      // var, let, const
+      // var = global variable
+      // let, const = local / scope based variable
+
+      // let a = "apple";
+      var a = 50;
+      function multiply() {
+        // var a = 3;
+        console.log("a=>", a);
+        let b = 50;
+        let sum = 3 + 50;
+        console.log("sum", sum);
+      }
+
+      multiply();
+
+      console.log("a=>", a);
+
+      // ===============================================================
+      // let name = prompt("What is your name?");
+      // let age = Number(prompt("What's your age?"));
+
+      // function isEligible(name, age) {
+      //   if (age > 18) {
+      //     console.log(`Hi ${name}, You are Eligible`);
+      //   } else {
+      //     console.log(`Hi ${name}, You are not Eligible`);
+      //   }
+      // }
+
+      // isEligible(name, age);
+
+      // ================================================================
+      // return statement
+      // function addFunction() {
+      //   let numOne = 12;
+      //   let numTwo = 20;
+      //   let sum = numOne + numTwo;
+      //   return sum;
+      //   // let b = 10;
+      // }
+
+      // console.log(addFunction());
+
+      // ---------------------------------------------------------------
+      // Function Expression
+      /*
+
+      declaration:
+
+        let varName = function(parameter-1,...parameter-n){
+          function body
+        
+        }
+      
+      varName(arg-1,...arg-n)
+      */
+
+      const addFunction = function (numOne, numTwo) {
+        // let numOne = 12;
+        // let numTwo = 20;
+        let sum = numOne + numTwo;
+        return sum;
+      };
+
+      console.log(addFunction(10, 345));
+
+      // ----------------------------------------------------------------
+      // Arrow Function
+      /*
+        Syntax
+          let varName = (parameter-1,...parameter-n) => {
+             function body
+          }
+      
+          varName(arg-1,...arg-n)
+      
+      */
+
+      // let multiply = (a, b, c) =>
+    </script>
+  </body>
+</html>
