@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non-Primitive Data types</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      console.log("hello world");
+      // Object - basics
+      /*
+        Syntax
+        let name = "robert"; primitive variable/datatypes
+
+        let objectName = {
+            key: value,
+            key1: value2,
+            key3: value3
+        }
+        
+        key => propertyName
+        value => property value
+      
+      */
+
+      let user = {
+        name: "robert",
+        age: 25,
+        isAdmin: true,
+      };
+
+      console.log("User==>", user);
+
+      // two types of syntax
+      // constructor syntax
+      // let user = new Object()
+
+      // object literal syntax
+      // let user = {}
+
+      // Dot notation
+      console.log("name====>", user.name);
+      console.log("age====>", user.age);
+
+      user.name = "Elon";
+      user.address = "Mumbai/Bombay";
+
+      console.log("User=====>", user);
+
+      let employee = new Object();
+      console.log("Employee------->", employee);
+      employee.id = "0976";
+      employee.name = "victor";
+      console.log("Employeee----->", employee);
+
+      // -------------------------------------------------------------
+      // nested objects
+      let john = {
+        firstName: "John",
+        userName: "John_david",
+        age: 40,
+        isMarried: false,
+        address: {
+          street: "3rd Street",
+          city: "Bengaluru",
+          State: "Karnataka",
+        },
+      };
+
+      console.log("nested object========>", john);
+      console.log("john's name===>", john.firstName);
+      console.log("john's username===>", john.userName);
+      console.log("john's Address=====>", john.address);
+      console.log("john's State=====>", john.address.State);
+      console.log("john's City=====>", john.address.city);
+      john.isAdmin = true;
+      console.log("nested object========>", john);
+      john.address.Country = "India";
+      john.address.State = "TamilNadu";
+      console.log("nested object========>", john);
+
+      console.log("John's Id card===>", john.idCard);
+      // Optional chaining
+
+      console.log("john's idCard", john?.idCard);
+    </script>
+  </body>
+</html>
