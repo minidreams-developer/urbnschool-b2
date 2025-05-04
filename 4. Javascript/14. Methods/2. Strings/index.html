@@ -41,6 +41,83 @@
       for (let i = 0; i < city.length; i++) {
         console.log("Characters of city==>", city[i]);
       }
+
+      // method 2: #######################################
+      // Accessing Characters
+      // ii) charAt
+      // syntax => string.charAt(pos)
+
+      console.log("Accessing Using CharAt===>", city.charAt(0));
+
+      // method 3: ########################################
+      // Changing cases
+      // uppercase & lowercase
+      // Syntax => string.toUpperCase(), string.toLowerCase()
+
+      let country = "India";
+      console.log("Country in default=>", country);
+      console.log("Country in uppercase=>", country.toUpperCase());
+      console.log("Country in lowercase=>", country.toLowerCase());
+
+      // method 4: ############################################
+      // substring concept
+      let region = "holand caps"; // a part of string is called substring
+
+      // holand => h -> substring, o -> substring,,,,
+      // holand => ho -> substring, and -> substring,
+
+      // Searching for substring
+      /*
+        1. string.indexof() and string.lastIndexof()
+        2. string.includes()
+        3. string.startsWith()
+        4. string.endsWith()
+      
+      */
+
+      /*
+        1. string.indexOf(a, b)
+        string.indexOf(substring, pos) => return the index or position or return -1.
+      
+      */
+      console.log("search substring=>", region.indexOf("la"));
+      console.log("search substring=>", region.indexOf("h"));
+
+      /*
+        2. string.lastIndexOf(substring, start pos)
+        
+      */
+      console.log("search substring from last=>", region.lastIndexOf("la"));
+
+      /*
+        3. string.includes(substring, pos) => search the string, and return true if that substring present.
+      
+      */
+      console.log("Search with includes=>", region.includes("xl"));
+
+      /*
+        4. string.startsWith(substring, pos) => search for whether the substring starts with given letter
+      
+      */
+
+      console.log("Search based on startswith=>", region.startsWith("ho"));
+
+      /*
+        5. string.endsWith(substring, pos)
+      
+      */
+
+      console.log("Search based on endsWith=>", region.endsWith("d"));
+
+      // method 5: #################################################
+      // Getting a substring
+      // string.slice(a , b) => a start po, b end pos
+
+      let welcome = "Hello, World";
+      console.log("Slice based on pos==>", welcome.slice(0, 6));
+
+      let invite = welcome.slice(0, 6);
+      console.log("Invite=>", invite);
     </script>
   </body>
 </html>
