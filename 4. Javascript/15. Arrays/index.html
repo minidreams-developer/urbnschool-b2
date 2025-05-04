@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array - Data structure</title>
+  </head>
+  <body>
+    <h1>Arrays[][][][][][][][][]</h1>
+
+    <script>
+      // Arrays
+      // Non - Primitive Data Types
+      // Functions, Objects, Arrays
+
+      /*
+        Object => collection of data in key:value pair
+
+        let user = {
+            name: "john",
+            age: 25,
+            address: "New York",
+            key: value
+        
+        }
+        
+        user.address = "Chennai"
+      
+      */
+
+      /*
+        Arrays -> collection of dta in sequential order
+        Syntax:
+         1. let variable = new Array()
+         2. let variable = [value1, value2, value3]
+                              0        1       2
+      */
+
+      let fruits = ["Apple", "Orange", "Mango"];
+      // position      [0]      [1]       [2]    - index
+      // length = 3
+
+      console.log("Array=>", fruits);
+      // Accessing Array elements
+      // by index
+      console.log(fruits[0]);
+      console.log(fruits[2]);
+      console.log(fruits[3]);
+
+      console.log("Fruits array length=>", fruits.length);
+
+
+      // example with loop
+      for(let i = 0; i < fruits.length; i++){
+        console.log('Fruits values', fruits[i]);
+        
+      }
+
+      // Updating Array
+      // arrayName[index] = value;
+      fruits[1] = "Pineapple";
+      console.log("Fruits=>", fruits);
+
+
+      // Deleting in Array
+      // Syntax
+      // delete arrayName[index]
+
+      console.log("Fruits array before deleting", fruits);
+      delete fruits[0];
+         console.log("Fruits array After deleting", fruits);
+
+    let mixArrays = ["john", 25, true, ["cricket", "football"], {name: "Alan", isMarried: true}]
+
+    console.log('MixArrays=>', mixArrays);
+
+    console.log('nested positions=>', mixArrays[3][1]);
+
+    console.log("nested object inside an array", mixArrays[4].isMarried);
+    
+    // =================================================================
+    // Array methods
+    // pop() and push()
+    // shift() and unshift()
+    
+    /*
+      let array = ["v2", "v3",,,,,,"v10000"]
+
+      pos =>        0      1          9997
+
+      Syntax
+      arrayName.pop() / arrayName.push()
+      pop() => remove last element in the array
+      push() => add an new element at the last in the array
+    */
+    
+    let books = ["tamil", "English", "Maths", "Physics"]
+    console.log(books);
+    books.pop()
+    console.log('after popping the book array', books);
+
+    books.push("Chemistry", "Biology")
+
+    console.log("After pushing entry to array", books);
+
+
+    // shift() => Remove first element in an array
+    books.shift()
+    console.log("After shifting an element from first", books);
+
+
+    // unshift() => Adding first element in an array
+    books.unshift("Social", "Science", "Humanitics")
+    console.log("After adding an entry to front of array", books);
+    
+    
+    
+    
+      
+      
+      
+    </script>
+  </body>
+  </body>
+</html>
