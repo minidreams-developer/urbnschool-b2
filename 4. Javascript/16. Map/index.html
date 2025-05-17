@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAP data structure</title>
+  </head>
+  <body>
+    <h1>Map Data structure</h1>
+
+    <script>
+      console.log("hello");
+      // Data structure
+      // Map => similar to object
+      // key : value
+      // Key can be any type ( it can be primitive or non primitive )
+      // syntax
+      // let varName = new Map()
+
+      let fruits = {};
+      //   let subjects = new Map();
+
+      //   console.log("Objects===>", fruits);
+      //   console.log("Map=======>", subjects);
+
+      // Adding values in objects
+      fruits.sugar = "112gm";
+      fruits.acidity = 30;
+      console.log("Objects===>", fruits);
+
+      // Map has set of specific methods to handle these
+      /*
+        1. map.set("key", "value") => adding properties
+        2. map.get(key) => return property's value based on key
+        3. map.has(key) => check the existence for the key - true/false
+        4. map.clear() => remove all the properties in the map
+        5. map.delete(key) => removes the property based on key
+        6. map.forEach() => loop ( for..)
+        7. keys()
+        8. values()
+        9. entries()
+        10. size
+      
+      */
+
+      // Adding a property
+      let subjects = new Map();
+      subjects.set("name", "john");
+      subjects.set("age", 25);
+      subjects.set("city", "chennai");
+
+      //   console.log("Subjects==>", subjects);
+
+      // Accessing Properties
+      console.log("name=>", subjects.get("name"));
+      console.log("age=>", subjects.get("age"));
+      console.log("street=>", subjects.get("street"));
+
+      // Check the existence of the property
+      console.log(subjects.has("city"));
+      console.log(subjects.has("street"));
+
+      // Size
+      console.log("subject's Size====>", subjects.size);
+
+      // remove a property based on key
+      subjects.delete("age");
+      console.log("subjects==>", subjects);
+
+      // clear methods
+      subjects.clear();
+      console.log("subjects==>", subjects);
+
+      // ------------we can put any data types as key-------------
+      // key as object
+      let userDetails = new Map();
+
+      let john = { name: "john", age: 25 };
+      let jack = { name: "jack", age: 25 };
+      let may = { name: "Mary", age: 25 };
+
+      userDetails.set(john, "Admin").set(jack, "Sales").set(may, "Operation");
+
+      console.log("userDetails====>", userDetails);
+
+      // keys
+      console.log("keys===>", userDetails.keys());
+
+      // values
+      console.log("values====>", userDetails.values());
+
+      // entires
+      console.log("entries====>", userDetails.entries());
+
+      // converting object to map
+      // object to map conversion
+      // Object.entires(object's name)
+      // we need an existing object
+      // we need a new Map also
+
+      let user = {
+        name: "ben",
+        age: 34,
+        city: "chennai",
+      };
+
+      console.log("user object==>", user);
+      let userMap = new Map(Object.entries(user));
+      console.log("user-converted-map====>", userMap);
+
+      // converting an Map to Objects
+      // Object.fromEntries()
+      let basket = new Map();
+      basket.set("fruit", "apple");
+      basket.set("things", "wrapper");
+      basket.set("where", "on the table");
+
+      console.log("normal Map==>", basket);
+
+      //   let table = new Object()
+      let table = Object.fromEntries(basket);
+
+      console.log("After changing into objects==>", table);
+    </script>
+  </body>
+</html>
