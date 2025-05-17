@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De-Structure</title>
+  </head>
+  <body>
+    <h1>De-structure</h1>
+
+    <script>
+      // destructuring
+      // extracting particular values from the data structure
+
+      // 1. Array destructuring
+      // 2. Object destructuring
+
+      // Array de-structure - basic
+      let colors = ["Red", "Green", "Blue"];
+
+      let [color1, color2, color3] = colors;
+
+      console.log("color1", color1);
+      console.log("color2", color2);
+      console.log("color3", color3);
+
+      // object de-structuring - basic
+      //   let person = {
+      //     name: "john",
+      //     age: 25,
+      //     city: "new York",
+      //   };
+
+      //   let { name, age, city } = person;
+
+      //   console.log(name);
+      //   console.log(age);
+      //   console.log(city);
+
+      // ---------------------------------------------------------
+      // Advanced de-structuring Array
+      // Skip elements
+      let userName = ["john", "jack", "Mary", "Robert"];
+      let [, , userThree] = userName;
+      console.log(userThree);
+
+      // swapping variables
+      let [numOne, numTwo] = [1, 2];
+      [numOne, numTwo] = [numTwo, numOne];
+
+      // Rest parameter
+      let [subject1, subject2, ...restSubjects] = [
+        "Tamil",
+        "English",
+        "Maths",
+        "Physics",
+        "chemistry",
+        "environmental",
+        "social science",
+      ];
+
+      console.log("Subject1", subject1);
+      console.log("Subject2", subject2);
+      console.log("restSubjects", restSubjects);
+
+      // Advanced de-structuring Objects
+      let person = {
+        name: "john",
+        age: 25,
+        city: "new York",
+      };
+
+      //   let { name, age, city } = { name: "john", age: 25, city: "chennai" };
+
+      //   console.log("name==>", name);
+
+      // Object nested de-structure
+      //   let {
+      //     name,
+      //     age,
+      //     city,
+      //     state = "TN",
+      //   } = {
+      //     name: "john",
+      //     age: 25,
+      //     city: "chennai",
+      //   };
+
+      //   console.log("state===>", state);
+      let { age } = { name: "john", age: 25 };
+
+      // rest parameter
+      let { name, ...restProp } = {
+        country: "India",
+        name: "john",
+        age: 35,
+        city: "Chennai",
+      };
+
+      console.log("name--->", name);
+      console.log("restProp---->", restProp);
+    </script>
+  </body>
+</html>
