@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Data Structure</title>
+  </head>
+  <body>
+    <h1>Set data structure</h1>
+    <script>
+      console.log("set data structure");
+      // Set Data structure
+      // It is related to array of data structure
+      // It cannot hold duplicate values
+
+      // Array
+      let books = ["maths", "science", "physics", "english", "maths"];
+      console.log("Array=>", books);
+
+      // Syntax
+      // let varName = new Set()
+
+      let fruits = new Set();
+      console.log("Set==>", fruits);
+
+      // Methods and Properties
+      // set.add() => adding a variable
+      // set.has() => checking a property exists
+      // set.delete() => removes a property
+      // set.clear() => clear entire properties and values
+      // keys()
+      // values()
+      // size
+
+      // adding a property
+      fruits.add("Apple");
+      fruits.add("orange");
+      fruits.add("mango");
+      fruits.add("Apple");
+      fruits.add("orange");
+
+      console.log("fruits===>", fruits);
+
+      // checking a property
+      console.log(fruits.has("Apple"));
+      console.log(fruits.has("strawberry"));
+
+      // delete ()
+      fruits.delete("mango");
+      console.log("fruits===>", fruits);
+
+      // keys
+      console.log("keys--->", fruits.keys());
+
+      // values
+      console.log("values---->", fruits.values());
+
+      // examples
+      let nameArray = ["john", "Jack", "mary", "john", "jack"];
+      console.log("Array with duplicates ===>", nameArray);
+
+      let nameSet = new Set(nameArray);
+      console.log("duplicate removed==>", nameSet);
+      console.log([...nameSet]);
+    </script>
+  </body>
+</html>
