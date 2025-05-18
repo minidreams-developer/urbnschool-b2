@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM selectors</title>
+  </head>
+  <body>
+    <h2>DOM Selectors</h2>
+    <p id="para">This is a paragraph</p>
+    <ul id="list">
+      <li class="list-items">Home</li>
+      <li class="list-items">About</li>
+      <li class="list-items">Projects</li>
+      <li class="list-items">Contact</li>
+    </ul>
+    <hr />
+    <form action="#">
+      <p>
+        <label for="subjects">Select Subject</label>
+        <input
+          type="radio"
+          name="subject"
+          id="subject-1"
+          value="English"
+        />English
+        <input type="radio" name="subject" id="subject-2" value="Maths" />Maths
+        <input
+          type="radio"
+          name="subject"
+          id="subject-3"
+          value="Physics"
+        />Physics
+        <input
+          type="radio"
+          name="subject"
+          id="subject-4"
+          value="Chemistry"
+        />Chemistry
+      </p>
+    </form>
+
+    <script>
+      // For selecting an element, need to access document
+      /*
+        document = {
+        
+                            html
+                head                          body
+                                               |
+                                               |
+                                       ------------------
+                                       h1           form-input
+        
+        
+        }
+      
+      
+      */
+      // Methods
+      // Selecting elements
+      // syntax
+      /*
+        1. document.getElementById('id')
+        2. document.getElementsByClassName("class")
+        3. document.getElementsByTagName('tag')
+        4. document.getElementsByName("name")
+
+        5. document.querySelector('query')
+        6. document.querySelectorAll("query")
+     
+     */
+      // -------------------------------------------
+      // 1. get by id
+      // syntax
+      // document.getElementById('id') => return the HTML element
+      let para = document.getElementById("para");
+
+      console.log("Para html element ====>", para);
+      console.log(para.id);
+      console.log("Content of an element===>", para.textContent);
+
+      // get by class
+      // syntax
+      // document.getElementsByClassName('class') => return array like elements
+      let listItems = document.getElementsByClassName("list-items");
+      console.log("list items===>", listItems);
+
+      console.log(listItems[0]);
+      console.log(listItems[1]);
+      console.log(listItems[2]);
+      console.log(listItems[3]);
+
+      // loops - for, while, do..while
+      // array or array like structure => for..of
+
+      let number = [3, 52, 523, 9, 2, 0, 235, 3];
+
+      for (let i = 0; i < number.length; i++) {
+        console.log(number[i]);
+      }
+
+      console.log("------------For..of--------------------");
+      for (const num of number) {
+        console.log(num);
+      }
+
+      for (const list of listItems) {
+        console.log("---text-content----");
+        console.log(list.textContent);
+      }
+
+      // Get by tag name
+      // document.getElementsByTagName('tagname') => array of elements
+      let liList = document.getElementsByTagName("li");
+      console.log("liList====>", liList);
+
+      console.log(
+        "===================================QuerySelector==============================="
+      );
+      // query Selectors
+      // document.querySelector('css selector')
+      let heading = document.querySelector("#para");
+
+      console.log(heading);
+      console.log(heading.id);
+      console.log(heading.textContent);
+
+      // 5. query Selector All
+      // document.querySelectorAll("css selectors")
+      let navItems = document.querySelectorAll("#list .list-items");
+      console.log("navItems=====>", navItems);
+
+      console.log(
+        "===================================QuerySelector All==============================="
+      );
+      for (const nav of navItems) {
+        console.log("---------Elements----------");
+        console.log(nav);
+        console.log("---------Class Names----------");
+        console.log(nav.className);
+        console.log("---------Contents----------");
+        console.log(nav.textContent);
+        console.log("*****************Wrap******************");
+      }
+    </script>
+  </body>
+</html>
